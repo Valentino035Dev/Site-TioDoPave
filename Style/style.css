@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: billzinho;
+    src: url(../fonts/Super\ Chips.ttf);
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e9d8a6;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 36px 32px;
+    background-color: #9e2a2b;
+    width: 97.5%;
+    border-radius: 20px 20px 20px 20px;
+    margin: 20px 20px 20px 20px;
+    box-shadow: 0 15px 12px rgba(0, 0, 0, 0.15);
+
+}
+
+.caixa-menu {
+    color: #fff3b0;
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 10px;
+    transition: 0.2s;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.104);
+
+
+}
+
+.caixa-menu:hover {
+    background: #fff3b0;
+    color: black;
+    transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);   
+}
+
+.titulo {
+    font-family: billzinho;
+    font-size: 78px;
+    color: #fff3b0;
+    margin: 0;
+    letter-spacing: 7px;
+    
+
+}
+
+.titulo:hover{
+    transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.cabecalho nav {
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho nav a {
+    color: #fff3b0;
+    text-decoration: none;
+    ;
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+p {
+    color: #fff3b0;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.container {
+    display: flex;
+    padding: 10px;
+    gap: 12px;
+    border-radius: 20px 20px 20px 20px;
+    margin: 20px 20px 20px 20px;
+    flex-direction: column;
+    flex: 1;
+    
+
+}
+
+
+
+
+.card {
+    display: flex;
+    background: #335c67;
+    color: white;
+    padding: 20px;
+    gap: 30px;
+    border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(2, 24, 171, 0.3);
+  transition: box-shadow .2s, transform .2s;
+
+}
+
+
+.card:hover{
+ transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+
+
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+
+.titio {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+
+}
+
+
+.img {
+    width: 900px;
+    height: auto;
+    border-radius: 12px;
+     box-shadow: 0 12px 12px rgba(255, 0, 0, 0.3);
+    transition: box-shadow .2s, transform .2s;
+    
+}
+
+
+.img:hover{
+    transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(255, 0, 0, 0.4);
+}
+
+
+.produto {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: box-shadow .2s, transform .2s;
+}
+
+.produto:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+.pai {
+    flex: 1;
+}
+
+.titu {
+    color: #e09f3e;
+    font-family: billzinho;
+    letter-spacing: 3px;
+
+}
+
+hr{
+    border: none;
+  border-top: 1px solid #000000;
+  margin: 1110px 0;
+  
+}
+
+
+.rodape-linha {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 19px;
+  background: #222;
+  color: #ece7e7;
+  padding: 20px 40px;
+  font-size: 18px;
+  font-family: italic   ;
+    
+  border-radius: 50px 50px 50px 50px;
+    margin: 20px 20px 20px 20px;
+
+}
+
+.rodape-linha p {
+  margin: 0px;
+}
+
+.contato,
+.rodape-linha nav {
+  display: flex;
+  gap: 20px;
+}
+
+.rodape-linha a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.rodape-linha a:hover {
+  color: #fff;
+}   
+
+
+.roda{
+    color: #e09f3e;
+}
