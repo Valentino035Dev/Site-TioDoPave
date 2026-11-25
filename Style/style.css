@@ -42,7 +42,7 @@ body {
     background: #fff3b0;
     color: black;
     transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);   
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
 }
 
 .titulo {
@@ -51,13 +51,13 @@ body {
     color: #fff3b0;
     margin: 0;
     letter-spacing: 7px;
-    
+
 
 }
 
-.titulo:hover{
+.titulo:hover {
     transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
 }
 
 .cabecalho nav {
@@ -88,7 +88,7 @@ p {
     margin: 20px 20px 20px 20px;
     flex-direction: column;
     flex: 1;
-    
+
 
 }
 
@@ -102,15 +102,15 @@ p {
     padding: 20px;
     gap: 30px;
     border-radius: 20px;
-      box-shadow: 0 4px 12px rgba(2, 24, 171, 0.3);
-  transition: box-shadow .2s, transform .2s;
+    box-shadow: 0 4px 12px rgba(2, 24, 171, 0.3);
+    transition: box-shadow .2s, transform .2s;
 
 }
 
 
-.card:hover{
- transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -136,27 +136,18 @@ p {
     width: 900px;
     height: auto;
     border-radius: 12px;
-     box-shadow: 0 12px 12px rgba(255, 0, 0, 0.3);
+    box-shadow: 0 12px 12px rgba(255, 0, 0, 0.3);
     transition: box-shadow .2s, transform .2s;
-    
+
 }
 
 
-.img:hover{
+.img:hover {
     transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(255, 0, 0, 0.4);
+    box-shadow: 0 12px 24px rgba(255, 0, 0, 0.4);
 }
 
 
-.produto {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  transition: box-shadow .2s, transform .2s;
-}
-
-.produto:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
-}
 .pai {
     flex: 1;
 }
@@ -168,51 +159,149 @@ p {
 
 }
 
-hr{
+hr {
     border: none;
-  border-top: 1px solid #000000;
-  margin: 1110px 0;
-  
+    border-top: 1px solid #000000;
+    margin: 1110px 0;
+
 }
 
 
 .rodape-linha {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 19px;
-  background: #222;
-  color: #ece7e7;
-  padding: 20px 40px;
-  font-size: 18px;
-  font-family: italic   ;
-    
-  border-radius: 50px 50px 50px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 19px;
+    background: #222;
+    color: #ece7e7;
+    padding: 20px 40px;
+    font-size: 18px;
+    font-family: italic;
+
+    border-radius: 50px 50px 50px 50px;
     margin: 20px 20px 20px 20px;
 
 }
 
 .rodape-linha p {
-  margin: 0px;
+    margin: 0px;
 }
 
 .contato,
 .rodape-linha nav {
-  display: flex;
-  gap: 20px;
+    display: flex;
+    gap: 20px;
 }
 
 .rodape-linha a {
-  color: #ccc;
-  text-decoration: none;
+    color: #ccc;
+    text-decoration: none;
 }
 
 .rodape-linha a:hover {
-  color: #fff;
-}   
+    color: #fff;
+}
 
 
-.roda{
+.roda {
     color: #e09f3e;
+}
+
+
+
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 40px;
+}
+
+.produto {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 8px;
+    width: 400px;
+    background: #335c67;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: box-shadow .2s, transform .2s;
+}
+
+.produto:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.produto img {
+    width: 100%;
+    background: #fff3b0;
+    border-radius: 12px;
+    margin-bottom: 6px;
+    transition: transform .3s;
+}
+
+
+
+.selo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+    padding: 5px 12px;
+    border-radius: 999px;
+    background: #9e2a2b;
+    color: #fff3b0;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.produto-nome {
+    margin: 0;
+    color: #e09f3e;
+    font-family: billzinho;
+    font-size: 26px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.produto-descricao {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.produto-preco {
+    margin: 4px 0 0 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.produto-preco s {
+    font-size: 16px;
+    font-weight: normal;
+
+}
+
+.produto-botao {
+    padding: 12px;
+    border-radius: 12px;
+    background: #e09f3e;
+    color: #540b0e;
+    text-align: center;
+    text-decoration: none;
+    font-family: fantasy;
+    font-size: 20px;
+}
+
+.produto-botao:hover {
+    background: #fff3b0;
+    transform: translateY(-3px);
 }
