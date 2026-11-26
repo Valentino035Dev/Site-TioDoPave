@@ -1,19 +1,40 @@
+/* ==========================================================
+   RESET GERAL
+   ========================================================== */
+
+/* Faz padding e borda entrarem no cálculo da largura/altura dos elementos */
 * {
     box-sizing: border-box;
 }
 
+/* ==========================================================
+   FONTE PERSONALIZADA
+   ========================================================== */
+
+/* Registra a fonte "Super Chips" com o nome "billzinho" para usar nos títulos */
 @font-face {
     font-family: billzinho;
     src: url(../fonts/Super\ Chips.ttf);
 }
 
+/* ==========================================================
+   PÁGINA
+   ========================================================== */
 
+/* Corpo da página: sem margem padrão, fonte Arial e fundo bege */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #e9d8a6;
+
 }
 
+/* ==========================================================
+   CABEÇALHO
+   ========================================================== */
+
+/* .cabecalho: barra vermelha no topo com título e menu lado a lado.
+   Bordas arredondadas e sombra para dar efeito de "flutuando" */
 .cabecalho {
     display: flex;
     align-items: center;
@@ -25,8 +46,11 @@ body {
     margin: 20px 20px 20px 20px;
     box-shadow: 0 15px 12px rgba(0, 0, 0, 0.15);
 
+
 }
 
+/* .caixa-menu: botão/link do menu. Texto amarelo claro, cantos arredondados
+   e leve brilho. A transição deixa o hover suave (0,2s) */
 .caixa-menu {
     color: #fff3b0;
     text-decoration: none;
@@ -38,6 +62,8 @@ body {
 
 }
 
+/* .caixa-menu:hover: ao passar o mouse, o fundo fica amarelo, o texto preto,
+   e o botão sobe 4px com uma sombra mais forte */
 .caixa-menu:hover {
     background: #fff3b0;
     color: black;
@@ -45,26 +71,42 @@ body {
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
 }
 
+/* .titulo: título "Tio do Pavê" no cabeçalho. Usa a fonte billzinho,
+   cor amarela e espaçamento entre letras.
+   OBS: padding-top não aceita valor negativo, então essa linha é ignorada */
 .titulo {
     font-family: billzinho;
-    font-size: 78px;
+    font-size: 30px;
     color: #fff3b0;
     margin: 0;
     letter-spacing: 7px;
-
-
+    text-decoration: none;
+    border-bottom: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: -100px;
 }
 
+/* .titulo:hover: ao passar o mouse, o título sobe 4px e ganha sombra */
 .titulo:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    text-decoration: none;
+    border-bottom: none;
+
 }
 
+/* .cabecalho nav: menu de navegação dentro do cabeçalho.
+   Deixa os links lado a lado com 30px de espaço entre eles */
 .cabecalho nav {
     display: flex;
     gap: 30px;
 }
 
+/* .cabecalho nav a: links do menu do cabeçalho, sem sublinhado,
+   em amarelo claro e com a fonte "fantasy".
+   OBS: há um ";" solto no meio, sem efeito */
 .cabecalho nav a {
     color: #fff3b0;
     text-decoration: none;
@@ -73,6 +115,11 @@ body {
     font-family: fantasy;
 }
 
+/* ==========================================================
+   TEXTO
+   ========================================================== */
+
+/* p: todos os parágrafos do site. Amarelo claro, 20px e centralizados */
 p {
     color: #fff3b0;
     font-size: 20px;
@@ -80,6 +127,12 @@ p {
 
 }
 
+/* ==========================================================
+   CONTAINER E CARDS
+   ========================================================== */
+
+/* .container: caixa que empilha seus itens na vertical (coluna)
+   com 12px de espaço entre eles */
 .container {
     display: flex;
     padding: 10px;
@@ -95,26 +148,40 @@ p {
 
 
 
+/* .card: cartão azul-esverdeado com cantos arredondados e sombra azul.
+   Os itens internos ficam lado a lado, com 30px de espaço */
 .card {
     display: flex;
     background: #335c67;
     color: white;
     padding: 20px;
-    gap: 30px;
+    gap: 30px;  
     border-radius: 20px;
     box-shadow: 0 4px 12px rgba(2, 24, 171, 0.3);
     transition: box-shadow .2s, transform .2s;
 
 }
 
+.car{
+    display: flex;
+    width: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 600px;
+}
 
+/* .card:hover: ao passar o mouse, o card sobe 4px e a sombra aumenta */
 .card:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
 }
 
 
+/* ==========================================================
+   SEÇÕES DE INTRODUÇÃO
+   ========================================================== */
 
+/* .intro: seção de introdução. Itens lado a lado, centralizados
+   verticalmente, com espaço de 40px entre eles */
 .intro {
     display: flex;
     align-items: center;
@@ -123,6 +190,8 @@ p {
 }
 
 
+/* .titio: seção com o mesmo layout da .intro (itens lado a lado,
+   centralizados verticalmente, 40px de espaço) */
 .titio {
     display: flex;
     align-items: center;
@@ -132,6 +201,12 @@ p {
 }
 
 
+/* ==========================================================
+   IMAGENS
+   ========================================================== */
+
+/* .img: imagem grande (900px de largura) com cantos arredondados
+   e sombra vermelha */
 .img {
     width: 900px;
     height: auto;
@@ -142,16 +217,24 @@ p {
 }
 
 
+/* .img:hover: ao passar o mouse, a imagem sobe 4px e a sombra vermelha aumenta */
 .img:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 24px rgba(255, 0, 0, 0.4);
 }
 
 
+/* ==========================================================
+   LAYOUT E TÍTULOS
+   ========================================================== */
+
+/* .pai: ocupa todo o espaço livre dentro de um container flex */
 .pai {
     flex: 1;
 }
 
+/* .titu: título de seção em laranja, com a fonte billzinho
+   e um leve espaçamento entre letras */
 .titu {
     color: #e09f3e;
     font-family: billzinho;
@@ -159,6 +242,8 @@ p {
 
 }
 
+/* hr: linha divisória. Só a borda de cima aparece (1px preta).
+   OBS: a margem de 1110px é muito grande e vai criar um espaço enorme */
 hr {
     border: none;
     border-top: 1px solid #000000;
@@ -167,6 +252,13 @@ hr {
 }
 
 
+/* ==========================================================
+   RODAPÉ
+   ========================================================== */
+
+/* .rodape-linha: rodapé escuro com cantos bem arredondados.
+   Os itens ficam espalhados nas laterais e quebram de linha se faltar espaço.
+   OBS: "italic" não é uma fonte válida em font-family (seria font-style) */
 .rodape-linha {
     display: flex;
     justify-content: space-between;
@@ -184,26 +276,32 @@ hr {
 
 }
 
+/* .rodape-linha p: tira a margem dos parágrafos dentro do rodapé */
 .rodape-linha p {
     margin: 0px;
 }
 
+/* .contato e .rodape-linha nav: deixam os itens de contato e o menu do rodapé
+   lado a lado, com 20px de espaço entre eles */
 .contato,
 .rodape-linha nav {
     display: flex;
     gap: 20px;
 }
 
+/* .rodape-linha a: links do rodapé, em cinza claro e sem sublinhado */
 .rodape-linha a {
     color: #ccc;
     text-decoration: none;
 }
 
+/* .rodape-linha a:hover: ao passar o mouse, o link do rodapé fica branco */
 .rodape-linha a:hover {
     color: #fff;
 }
 
 
+/* .roda: texto do rodapé em laranja (mesma cor dos títulos) */
 .roda {
     color: #e09f3e;
 }
@@ -211,6 +309,12 @@ hr {
 
 
 
+/* ==========================================================
+   PRODUTOS
+   ========================================================== */
+
+/* .produtos: grade da lista de produtos, com 3 colunas do mesmo tamanho,
+   32px de espaço entre elas, largura máxima de 1400px e centralizada */
 .produtos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -220,6 +324,8 @@ hr {
     padding: 0 40px;
 }
 
+/* .produto: cartão de cada produto (400px de largura), com conteúdo em coluna.
+   position: relative permite posicionar o selo por cima dele */
 .produto {
     position: relative;
     display: flex;
@@ -234,11 +340,14 @@ hr {
     transition: box-shadow .2s, transform .2s;
 }
 
+/* .produto:hover: ao passar o mouse, o cartão sobe 4px e a sombra aumenta */
 .produto:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
 }
 
+/* .produto img: foto do produto. Ocupa toda a largura do cartão,
+   com fundo amarelo claro e cantos arredondados */
 .produto img {
     width: 100%;
     background: #fff3b0;
@@ -249,6 +358,8 @@ hr {
 
 
 
+/* .selo: etiqueta redonda (ex.: "Promoção") posicionada no canto superior
+   esquerdo do cartão, por cima da imagem (z-index: 1) */
 .selo {
     position: absolute;
     top: 30px;
@@ -263,6 +374,8 @@ hr {
     font-family: Arial, sans-serif;
 }
 
+/* .produto-nome: nome do produto, centralizado, em laranja
+   e com a fonte billzinho */
 .produto-nome {
     margin: 0;
     color: #e09f3e;
@@ -272,24 +385,29 @@ hr {
     text-align: center;
 }
 
+/* .produto-descricao: texto de descrição do produto (16px, com bom espaço entre linhas) */
 .produto-descricao {
     margin: 0;
     font-size: 16px;
     line-height: 1.4;
 }
 
+/* .produto-preco: preço do produto, grande (24px) e em negrito */
 .produto-preco {
     margin: 4px 0 0 0;
     font-size: 24px;
     font-weight: bold;
 }
 
+/* .produto-preco s: preço antigo riscado (tag <s>), menor e sem negrito */
 .produto-preco s {
     font-size: 16px;
     font-weight: normal;
 
 }
 
+/* .produto-botao: botão de compra do produto. Fundo laranja, texto vinho,
+   cantos arredondados e fonte "fantasy" */
 .produto-botao {
     padding: 12px;
     border-radius: 12px;
@@ -301,7 +419,177 @@ hr {
     font-size: 20px;
 }
 
+/* .produto-botao:hover: ao passar o mouse, o botão fica amarelo claro e sobe 3px */
 .produto-botao:hover {
     background: #fff3b0;
     transform: translateY(-3px);
 }
+
+/* ==========================================================
+   FORMULÁRIO ESCURO - classes: row, g-3, col-12, md:col-6,
+   md:col-4, md:col-2, form-label, form-control, form-field, check
+   Para usar as cores do Tio do Pavê, troque só as variáveis do .row.
+   Ex.: --fundo: #335c67; --campo-borda: #fff3b0; --destaque: #e09f3e;
+   ========================================================== */
+
+/* .row: o formulário. Grade de 12 colunas com fundo escuro e cantos arredondados.
+   Por padrão (celular) cada item ocupa a linha inteira */
+.row {
+    --fundo: #e9c46a ;
+    --borda-caixa: #1e2228;
+    --campo-borda: #30363d;
+    --texto: #000;
+    --placeholder: #6b7480;
+    --destaque: #0a8bff;
+    --foco: #0b6cc4;
+    
+    
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 24px;
+    background: var(--fundo);
+    border: 1px solid var(--borda-caixa);
+    border-radius: 12px;
+    color: var(--texto);
+    font-family: italic;
+    margin: 30px;
+}
+
+/* .g-3: espaço entre os campos */
+.espaço {
+    gap: 16px 12px;
+}
+
+.row  {
+    grid-column: span 12;
+}
+
+/* .col-12: ocupa a linha inteira */
+.col-12 {
+    grid-column: span 12;
+}
+
+/* .form-label: texto acima de cada campo */
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--texto);
+}
+
+/* .form-control: campos de texto, e-mail, senha e a lista de seleção */
+.form-control {
+    width: 100%;
+    height: 46px;
+    padding: 0 16px;
+    background: transparent;
+    border: 1px solid var(--campo-borda);
+    border-radius: 10px;
+    color: var(--texto);
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.form-control::placeholder {
+    color: var(--placeholder);
+}
+
+/* Campo selecionado: borda azul */
+.form-control:focus {
+    outline: none;
+    border-color: var(--foco);
+    box-shadow: 0 0 0 1px var(--foco);
+}
+
+/* Select (lista "State") com setinha própria */
+select.form-control {
+    appearance: none;
+    padding-right: 40px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23f0f0f0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m3 6 5 5 5-5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+}
+
+select.form-control option {
+    background: whitesmoke;
+    color: var(--texto);
+}
+
+/* .form-field: caixa do checkbox com o texto ao lado */
+.form-field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-field label {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* .check: o quadradinho do checkbox */
+.check {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    border: 1px solid var(--campo-borda);
+    border-radius: 6px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.check:checked {
+    background: var(--destaque);
+    border-color: var(--destaque);
+}
+
+.check:focus-visible {
+    outline: 2px solid var(--foco);
+    outline-offset: 2px;
+}
+
+/* Botão azul de enviar (qualquer <button> dentro do formulário) */
+.row button {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    background: var(--destaque);
+    color: #fff;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: filter .2s, transform .2s;
+}
+
+.row button:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+}
+
+/* Telas médias e grandes (768px ou mais): as colunas "md:" passam a valer.
+   Os ":" das classes precisam de "\" no CSS */
+@media (min-width: 768px) {
+    .md\:col-6 {
+        grid-column: span 6;
+    }
+
+    .md\:col-4 {
+        grid-column: span 4;
+    }
+
+    .md\:col-2 {
+        grid-column: span 2;
+    }
+}
+
+
+
+
+
+
+
+
+
